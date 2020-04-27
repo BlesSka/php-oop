@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<style>
+    .javi, .soni {
+        margin: 15px 0;
+    }
+    @media (max-width: 767px) {
+        div.javi.btn.btn-primary {
+            background-color: green;
+        }
+    }
+</style>
+<body>
+        <div class="container-fluid">
+            <header>
+                <div class="cotainer">
+                    <div class="col-xs-12 btn-info">
+                        <div id="elena" class="javi btn btn-primary col-sm-6 col-xs-12">Javier </div>
+                        <div id="cuna" class="soni btn btn-warning col-sm-6 col-xs-12"> Sonia</div>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <audio data-key="65" src="sound/"></audio>
+        <audio data-key="83" src="sound/"></audio>
+        <audio data-key="68" src="sound/"></audio>
+        <audio data-key="70" src="sound/"></audio>
+        <audio data-key="71" src="sound/"></audio>
+        <audio data-key="72" src="sound/"></audio>
+        <audio data-key="74" src="sound/"></audio>
+        <audio data-key="75" src="sound/"></audio>
+        <audio data-key="76" src="sound/"></audio>
+</body>
+</html>
+<script>
+    window.addEventListener('keydown', function(e) {
+        console.log(e.keyCode);
+
+        if(e.keyCode == 65){
+            document.getElementById("elena").style.backgroundColor = "gray";
+            document.getElementById("elena").innerHTML = "Javielitro";
+            document.getElementById("elena").innerHTML = "Javielitro";
+        }
+    });
+    
+
+    document.getElementById("elena").addEventListener("click", myFunction);
+
+    function myFunction() {
+        document.getElementById("cuna").innerHTML = "La Cuña";
+    }
+
+    document.getElementById("cuna").addEventListener("click", myFunction2);
+
+function myFunction2() {
+    document.getElementById("elena").innerHTML = "Javielitro";
+    document.getElementById("elena").style.backgroundColor = "gray";
+}
+
+</script>
